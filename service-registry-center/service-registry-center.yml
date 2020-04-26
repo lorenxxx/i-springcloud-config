@@ -6,7 +6,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 10
   server:
-    enableSelfPreservation: false
+    enableSelfPreservation: true
     evictionIntervalTimerInMs: 10000
   client:
     registerWithEureka: false
