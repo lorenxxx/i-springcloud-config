@@ -1,7 +1,3 @@
-server:
-  servlet:
-    contextPath: /registry
-
 eureka:
   server:
     enableSelfPreservation: false
