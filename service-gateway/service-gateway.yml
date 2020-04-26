@@ -8,6 +8,6 @@ zuul:
     user-api:
       path: /user-api/**
       serviceId: service-user
-    auth-api:
-      path: /auth-api/**
-      serviceId: service-auth
+    task-api:
+      path: /task-api/**
+      serviceId: service-task
