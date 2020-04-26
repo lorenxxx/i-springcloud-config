@@ -14,8 +14,3 @@ zuul:
     task-api:
       path: /task-api/**
       serviceId: service-task
-
-eureka:
-  instance:
-    appname: ${spring.application.name}
-    instanceId: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
