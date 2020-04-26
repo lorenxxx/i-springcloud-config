@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: service-gateway
-
 server:
   servlet:
     contextPath: /gateway
