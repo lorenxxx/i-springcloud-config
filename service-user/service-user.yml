@@ -3,8 +3,12 @@ server:
   servlet:
     contextPath: /user
 
-
 # Ribbon负载均衡配置（指定具体服务）
 service-task:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+# Feign启用Hystrix
+feign:
+  hystrix:
+    enabled: true
