@@ -3,6 +3,8 @@ server:
   servlet:
     contextPath: /user
 
+
+# Ribbon负载均衡配置（指定具体服务）
 service-task:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
