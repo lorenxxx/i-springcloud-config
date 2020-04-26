@@ -1,16 +1,10 @@
 server:
   port: 8050
   servlet:
-    contextPath: /zuul
+    contextPath: /gateway
 
 zuul:
   routes:
-    ribbon-api:
-      path: /ribbon-api/**
-      serviceId: service-ribbon
-    feign-api:
-      path: /feign-api/**
-      serviceId: service-feign
     user-api:
       path: /user-api/**
       serviceId: service-user
