@@ -1,4 +1,10 @@
 eureka:
+  instance:
+    appname: ${spring.application.name}
+    instanceId: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 10
   server:
     enableSelfPreservation: false
     evictionIntervalTimerInMs: 10000
