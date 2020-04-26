@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: service-gateway
+
 server:
   servlet:
     contextPath: /gateway
@@ -10,3 +14,8 @@ zuul:
     task-api:
       path: /task-api/**
       serviceId: service-task
+
+eureka:
+  instance:
+    appname: ${spring.application.name}
+    instanceId: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
