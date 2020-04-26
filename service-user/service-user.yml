@@ -1,12 +1,11 @@
 server:
-  port: 8050
   servlet:
     contextPath: /user
 
 # Ribbon负载均衡配置（指定具体服务）
 service-task:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
 
 # Feign启用Hystrix
 feign:
