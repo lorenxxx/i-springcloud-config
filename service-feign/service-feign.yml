@@ -1,8 +1,0 @@
-server:
-  port: 8040
-  servlet:
-      contextPath: /feign
-
-feign:
-  hystrix:
-    enabled: true
